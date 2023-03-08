@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>rollup demo(module)</title>
+        <script src="../node_modules/xregexp/xregexp-all.js"></script>
+        <script type="module">
+            import { transpose } from "./rollup-bundle.js"
+            console.log(transpose('C G Am Em C F C G').toKey('D').toString())
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
