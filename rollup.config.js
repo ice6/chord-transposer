@@ -2,7 +2,7 @@
 export default {
 	input: 'dist/index.js',
 	output: {
-		file: 'scripts/rollup-bundle.js',
+		file: 'build/rollup-bundle.js',
 		format: 'es'
 	},
 	external: ['xregexp'] // <-- suppresses the warning

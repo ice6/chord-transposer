@@ -1,4 +1,4 @@
-import * as XRegExp from "xregexp";
+import * as XRegExp from 'xregexp';
 
 /**
  * The rank for each possible chord. Rank is the distance in semitones from C.
@@ -72,7 +72,7 @@ export class Chord {
       throw new Error(`${token} is not a valid chord`);
     }
     const result = XRegExp.exec(token, CHORD_REGEX);
-    return new Chord(result.root, result.suffix, result.bass);
+    return new Chord(result.groups.root, result.groups.suffix, result.groups.bass);
   }
 }
 

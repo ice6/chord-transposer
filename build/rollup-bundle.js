@@ -558,6 +558,7 @@ var index = {
     KeySignatures,
     Transposer,
 };
+
 window.transpose = (text) => new Transposer(text);
 
 export { Chord, KeySignature, KeySignatures, Transposer, index as default, transpose };
